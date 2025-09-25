@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANJEEV UPPU</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased overflow-x-hidden animated-gradient">
+
+    <div id="particles-js"></div>
+
+    <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 
+    border-b border-gray-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold text-white"><a href="#home">SANJEEV UPPU</a></div>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#home" class="nav-link text-gray-300 hover:text-sky-400 transition-colors 
+                        duration-300">Home</a>
+                    <a href="#about-skills" class="nav-link text-gray-300 hover:text-sky-400 transition-colors
+                         duration-300">About &
+                        Skills</a>
+                    <a href="#projects" class="nav-link text-gray-300 hover:text-sky-400 transition-colors
+                         duration-300">Projects</a>
+                    <a href="#certifications" class="nav-link text-gray-300 hover:text-sky-400 transition-colors 
+                        duration-300">Certifications</a>
+                    <a href="#resume" class="nav-link text-gray-300 hover:text-sky-400 transition-colors
+                         duration-300">Resume</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-sky-400 transition-colors 
+                        duration-300">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-gray-900/95 backdrop-blur-sm fixed 
+            top-0 left-0 w-full h-full transform -translate-x-full z-40">
+            <div class="flex justify-end p-6">
+                <button id="close-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex flex-col items-center justify-center h-full -mt-16 space-y-8 text-2xl">
+                <a href="#home" class="mobile-nav-link text-gray-300 hover:text-sky-400">Home</a>
+                <a href="#about-skills" class="mobile-nav-link text-gray-300 hover:text-sky-400">About & Skills</a>
+                <a href="#projects" class="mobile-nav-link text-gray-300 hover:text-sky-400">Projects</a>
+                <a href="#certifications" class="mobile-nav-link text-gray-300 hover:text-sky-400">Certifications</a>
+                <a href="#resume" class="mobile-nav-link text-gray-300 hover:text-sky-400">Resume</a>
+                <a href="#contact" class="mobile-nav-link text-gray-300 hover:text-sky-400">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="relative z-10 container mx-auto px-6">
+
+        <section id="home" class="min-h-screen flex items-center relative">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
+                <div>
+                    <p class="text-sky-400 font-medium text-lg fade-in-up">Hi, my name is</p>
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mt-2 fade-in-up"
+                        style="transition-delay: 100ms;">SANJEEV UPPU.</h1>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-400 mt-2
+                     fade-in-up typing-effect" style="transition-delay: 200ms;">I build things for the web.</h2>
+                    <p class="mt-6 max-w-2xl text-lg text-gray-400 fade-in-up" style="transition-delay:
+                     300ms;">
+                        I am a Java Developer and Software Engineer. I build scalable, secure
+                        systems with Spring Boot
+                        and am gaining expertise in Generative AI.
+                    </p>
+                    <div class="mt-8 flex gap-4 fade-in-up" style="transition-delay: 400ms;">
+                        <a href="#projects" class="animated-button pulse-button bg-sky-500 hover:bg-sky-600
+                             text-white font-bold py-3 px-6 rounded-lg transition-transform 
+                             duration-300 transform hover:scale-105">View
+                            My Work</a>
+                        <a href="#contact" class="animated-button bg-gray-700 hover:bg-gray-600 text-white 
+                            font-bold py-3 px-6 rounded-lg transition-transform duration-300 
+                            transform hover:scale-105">Get
+                            In Touch</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex justify-center items-center hero-animation-container">
+                    <div class="w-full max-w-sm lg:max-w-md">
+                        <svg width="100%" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+                                </linearGradient>
+                                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                                    <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                                    <feMerge>
+                                        <feMergeNode in="coloredBlur" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <g class="orbit" style="transform-origin: 50% 50%;">
+                                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(56, 189, 
+                                248, 0.2)" stroke-width="0.5" />
+                                <circle cx="50" cy="10" r="3" fill="url(#grad1)" />
+                            </g>
+                            <g class="orbit-reverse" style="transform-origin: 50% 50%;">
+                                <circle cx="50" cy="50" r="30" fill="none" stroke="rgba(56, 189,
+                                 248, 0.3)" stroke-width="0.5" />
+                                <circle cx="80" cy="50" r="4" fill="url(#grad1)" />
+                            </g>
+                            <g class="orbit" style="transform-origin: 50% 50%; animation-duration: 
+                            20s;">
+                                <circle cx="50" cy="50" r="20" fill="none" stroke="rgba(56, 189,
+                                 248, 0.4)" stroke-width="0.5" />
+                                <circle cx="30" cy="50" r="2.5" fill="url(#grad1)" />
+                            </g>
+                            <circle class="core-pulse" cx="50" cy="50" r="10" fill="url(#grad1)" filter="url(#glow)" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <a href="#about-skills" class="scroll-down-arrow text-white">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </a>
+        </section>
+
+        <div class="w-full flex justify-center py-12">
+            <hr class="w-1/2 md:w-1/3 section-separator">
+        </div>
+
+        <section id="about-skills" class="py-12 md:py-20">
+            <div class="fade-in-up">
+                <h3 class="animated-heading text-4xl md:text-5xl font-bold text-white mb-4
+                 text-center">About & Skills
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-10 mb-16">
+                    <div class="md:col-span-3 text-lg text-gray-400 space-y-4">
+                        <p>Hello! I'm Sanjeev Uppu, a passionate Java Developer and Software Engineer. My journey into
+                            development started with experimenting on small web projects, which quickly turned into a
+                            deep interest in Java programming and solving problems through Data Structures and
+                            Algorithms (DSA). This foundation has shaped the way I approach challenge by writing clean,
+                            efficient, and logical code.
+
+                            Over time, I’ve grown into building scalable, secure, and high-performance systems with
+                            Spring Boot. Alongside this, I’m also developing expertise in Generative AI, combining my
+                            technical skills with creativity to craft intelligent and human-centered digital
+                            experiences.
+                        </p>
+                        <p>I am very eager to join a top organization where I can apply my skills in building products,
+                            leading projects, and exploring the world of AI. </p>
+                    </div>
+                    <div class="md:col-span-2 flex justify-center items-start">
+                        <div class="w-64 h-64 md:w-80 md:h-80 relative group">
+                            <div class="floating-image absolute inset-0 bg-sky-500 rounded-lg"></div>
+                            <img src="files\profile1.jpg"
+                                alt="A professional headshot of SANJEEV UPPU"
+                                class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg group-hover:scale-105 transition-transform duration-300"
+                                onerror="this.onerror=null;this.src='https://placehold.co/400x400/1f2937/d1d5db?text=Image+Error';">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12">
+                    <h4 class="text-2xl font-bold text-white mb-4">Languages & Frameworks</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6 text-center">
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-gray-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 20l4-16M8 4l4 16"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">C</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-indigo-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4l8 8-8 8">
+                                </path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">C++</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-orange-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">Java</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-blue-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11H5m14 0a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2a2 2 0 012-2"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">Python</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-orange-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">HTML</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-blue-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5h18M3 12h18M3 19h18"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">CSS</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-yellow-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l-4 4-4-4 4-4"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">JavaScript</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-green-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">Spring Boot</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-blue-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">MySQL</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-green-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 2l9 4.5v11L12 22l-9-4.5v-11z"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">MongoDB</h5>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-bold text-white mb-4">Tools & Platforms</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6 text-center">
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-blue-600" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12h18M3 6h18M3 18h18"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">VS Code</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-indigo-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z">
+                                </path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">Eclipse</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-purple-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">IntelliJ IDEA</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-orange-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">Jupyter Notebook</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-gray-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 4h16v16H4V4z"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">Windows</h5>
+                        </div>
+
+
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-green-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12h18M3 6h18M3 18h18"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">Linux</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-teal-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 4h16v16H4V4z"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">MobaXTerm</h5>
+                        </div>
+
+                        <div
+                            class="fade-in-up bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center transform hover:-translate-y-2 transition-transform duration-300">
+                            <svg class="w-12 h-12 mb-2 text-yellow-500" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h18v18H3V3z"></path>
+                            </svg>
+                            <h5 class="text-md font-semibold text-white">AWS</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="w-full flex justify-center py-12">
+            <hr class="w-1/2 md:w-1/3 section-separator">
+        </div>
+
+        <section id="projects" class="py-12 md:py-20">
+            <div class="fade-in-up">
+                <h3 class="animated-heading text-4xl md:text-5xl font-bold text-white mb-4 text-center">Some Things I've
+                    Built</h3>
+                <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="project-card-container slide-in-left" style="transition-delay: 100ms;">
+                        <div class="project-card w-full h-96">
+                            <div class="project-card-front bg-gray-800 rounded-lg shadow-lg"><img
+                                    src="files\payment.png"
+                                    alt="Screenshot of Project 1" class="w-full h-48 object-cover"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/600x400/1d4ed8/ffffff?text=Image+Error';">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-bold text-white">Realtime Payment Integration System</h4>
+                                    <p class="mt-2 text-gray-400">A brief description of the project. Hover to see more
+                                        details and links.</p>
+                                    <div class="mt-4 flex gap-2 text-sm font-medium">
+                                        <span class="bg-gray-700 text-sky-300 px-3 py-1 rounded-full">Java</span>
+                                        <span
+                                            class="bg-gray-700 text-sky-300 px-3 py-1 rounded-full">SpringBoot</span><span
+                                            class="bg-gray-700 text-sky-300 px-3 py-1 rounded-full">MySQL</span>
+                                        <span class="bg-gray-700 text-sky-300 px-3 py-1 rounded-full">AWS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-card-back bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col justify-center 
+                                items-center text-center">
+                                <h4 class="text-xl font-bold text-white">Realtime Payment Integration System using
+                                    Trustly API</h4>
+                                <p class="mt-2 text-gray-300">Developed a secure, high-performance payment system with
+                                    Java Spring Boot, microservices, and Trustly API, deployed on AWS EC2 with MySQL.
+                                </p>
+                                <div class="mt-6 flex gap-4"><a href="#" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-lg 
+                                        transition-colors">View
+                                        Site</a><a href=https://bitbucket.org/sanjeev-workspace/workspace/projects/J25CT
+                                        class="bg-gray-600 hover:bg-gray-500 text-white font-semibold py-2 px-4 rounded-lg
+                                         transition-colors">View
+                                        Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card-container fade-in-up" style="transition-delay: 200ms;">
+                        <div class="project-card w-full h-96">
+                            <div class="project-card-front bg-gray-800 rounded-lg shadow-lg"><img
+                                    src="files\QuoteAPI.png"
+                                    alt="Screenshot of Project 2" class="w-full h-48 object-cover"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e40af/ffffff?text=Image+Error';">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-bold text-white">Quote API</h4>
+                                    <p class="mt-2 text-gray-400">A brief description of the project. Hover to see more
+                                        details and links.</p>
+                                    <div class="mt-4 flex gap-2 text-sm font-medium"><span
+                                            class="bg-gray-700 text-sky-300 px-3 py-1 rounded-full">SpringBoot</span><span
+                                            class="bg-gray-700 text-sky-300 px-3 py-1 rounded-full">Bucket4j</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-card-back bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col 
+                                justify-center items-center text-center">
+                                <h4 class="text-xl font-bold text-white">QuoteAPI</h4>
+                                <p class="mt-2 text-gray-300">Developed a Java Backend application with Spring Boot and
+                                    HTTP API endpoints.
+                                    Implemented Bucket4j for IP-based rate limiting, ConcurrentHashMap for in-memory
+                                    quote storage, and session expiration after one minute.
+                                    Integrated Swagger (OpenAPI 3) for interactive API documentation,
+                                    enabling easy testing, adding, deleting, and fetching random quotes efficiently.</p>
+                                <div class="mt-6 flex gap-4"><a href="#" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 
+                                        rounded-lg transition-colors">View
+                                        Site</a><a href=https://github.com/Sanjeev-Uppu/quoteapi class="bg-gray-600 hover:bg-gray-500 text-white font-semibold py-2 px-4 
+                                        rounded-lg transition-colors">View
+                                        Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card-container slide-in-right" style="transition-delay: 300ms;">
+                        <div class="project-card w-full h-96">
+                            <div class="project-card-front bg-gray-800 rounded-lg shadow-lg"><img
+                                    src="files\music.png"
+                                    alt="Screenshot of Project 3" class="w-full h-48 object-cover"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e3a8a/ffffff?text=Image+Error';">
+                                <div class="p-6">
+                                    <h4 class="text-xl font-bold text-white">Music Web Application</h4>
+                                    <p class="mt-2 text-gray-400">A brief description of the project. Hover to see more
+                                        details and links.</p>
+                                    <div class="mt-4 flex gap-2 text-sm font-medium"><span
+                                            class="bg-gray-700 text-sky-300 px-3 py-1 rounded-full">HTML</span><span
+                                            class="bg-gray-700 text-sky-300 px-3 py-1 rounded-full">CSS</span>
+                                        <span class="bg-gray-700 text-sky-300 px-3 py-1 rounded-full">JavaScript</span>
+                                        <span class="bg-gray-700 text-sky-300 px-3 py-1 rounded-full">Bootstrap</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-card-back bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col justify-center 
+                                items-center text-center">
+                                <h4 class="text-xl font-bold text-white">Music Web Application</h4>
+                                <p class="mt-2 text-gray-300">Full-Stack Music Web Application developed by a team of 3,
+                                    with my role as frontend developer using HTML, CSS, JavaScript, and Bootstrap,
+                                    and a Django backend with SQL database for efficient data management.</p>
+                                <div class="mt-6 flex gap-4"><a href="#" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-lg 
+                                        transition-colors">View
+                                        Site</a><a href="#" class="bg-gray-600 hover:bg-gray-500 text-white font-semibold py-2 px-4 rounded-lg 
+                                        transition-colors">View
+                                        Code</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="w-full flex justify-center py-12">
+            <hr class="w-1/2 md:w-1/3 section-separator">
+        </div>
+
+        <section id="certifications" class="py-12 md:py-20">
+            <div class="fade-in-up">
+                <h3 class="animated-heading text-4xl md:text-5xl font-bold text-white mb-4 text-center">Certifications
+                </h3>
+                <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+
+                    <div
+    class="shine-effect bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 flex items-center space-x-6">
+    <div class="flex-shrink-0">
+        <svg class="w-16 h-16 text-orange-400" fill="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.92 14.08L6 12l1.41-1.41L10.08 13.26l4.51-4.51L16 10.17l-5.92 5.91z" />
+        </svg>
+    </div>
+    <div>
+        <h4 class="text-xl font-bold text-white">Problem Solving Through Programming in C (Elite)</h4>
+        <p class="text-gray-400 font-medium">NPTEL (12 weeks)</p>
+        <a href=https://drive.google.com/file/d/1mh8bWb2uVT2diDlL3x6Ktxhkf7s2stQu/view?usp=drive_link class="text-sky-400 hover:text-sky-300 mt-2 inline-block">View Credential →</a>
+    </div>
+</div>
+
+<div
+    class="shine-effect bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 flex items-center space-x-6">
+    <div class="flex-shrink-0">
+        <svg class="w-16 h-16 text-indigo-400" fill="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.92 14.08L6 12l1.41-1.41L10.08 13.26l4.51-4.51L16 10.17l-5.92 5.91z" />
+        </svg>
+    </div>
+    <div>
+        <h4 class="text-xl font-bold text-white">Programming in Modern C++ (Elite)</h4>
+        <p class="text-gray-400 font-medium">NPTEL (12 weeks)</p>
+        <a href=https://drive.google.com/file/d/17SqsR_0RLXr1Q_Cl0KmjHJ2-1tSq0war/view?usp=drive_link class="text-sky-400 hover:text-sky-300 mt-2 inline-block">View Credential →</a>
+    </div>
+</div>
+
+<div
+    class="shine-effect bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 flex items-center space-x-6">
+    <div class="flex-shrink-0">
+        <svg class="w-16 h-16 text-blue-400" fill="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.92 14.08L6 12l1.41-1.41L10.08 13.26l4.51-4.51L16 10.17l-5.92 5.91z" />
+        </svg>
+    </div>
+    <div>
+        <h4 class="text-xl font-bold text-white">Java Full Stack</h4>
+        <p class="text-gray-400 font-medium">EduSkills</p>
+        <a href=https://drive.google.com/file/d/1jQxOXKt9fmCg9Ono-gDbPmeHgOuvcC7H/view?usp=drivesdk class="text-sky-400 hover:text-sky-300 mt-2 inline-block">View Credential →</a>
+    </div>
+</div>
+
+<div
+    class="shine-effect bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 flex items-center space-x-6">
+    <div class="flex-shrink-0">
+        <svg class="w-16 h-16 text-green-400" fill="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.92 14.08L6 12l1.41-1.41L10.08 13.26l4.51-4.51L16 10.17l-5.92 5.91z" />
+        </svg>
+    </div>
+    <div>
+        <h4 class="text-xl font-bold text-white">Introduction to Machine Learning and AI</h4>
+        <p class="text-gray-400 font-medium">edX</p>
+        <a href=https://drive.google.com/file/d/1M6ww6uUZ32uW2E2rn0w25ZUT0J7M78IQ/view?usp=sharing
+         class="text-sky-400 hover:text-sky-300 mt-2 inline-block">View Credential →</a>
+    </div>
+</div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <div class="w-full flex justify-center py-12">
+            <hr class="w-1/2 md:w-1/3 section-separator">
+        </div>
+
+        <section id="resume" class="py-12 md:py-20 text-center">
+            <div class="fade-in-up">
+                <h3 class="animated-heading text-4xl md:text-5xl font-bold text-white mb-4 text-center">My Resume</h3>
+                <p class="mt-4 max-w-xl mx-auto text-lg text-gray-400">
+                    For a more detailed look at my experience, skills, and qualifications, please feel free to download
+                    my resume.
+                </p>
+                <div class="mt-10">
+                    <a href="T:\Malli\portfolio-main\portfolio-main\files\SANJEEV_RESUME_Professional.pdf"
+                        download="SANJEEV_RESUME_Professional.pdf"
+                        class="animated-button shine-effect inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg transition-transform duration-300 transform hover:scale-105">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="w-full flex justify-center py-12">
+            <hr class="w-1/2 md:w-1/3 section-separator">
+        </div>
+
+        <section id="contact" class="py-12 md:py-20 text-center">
+            <div class="fade-in-up">
+                <h3 class="animated-heading text-5xl md:text-6xl font-bold text-white mt-2">Get In Touch</h3>
+                <p class="mt-4 max-w-xl mx-auto text-lg text-gray-400">My inbox is always open. Whether you have a
+                    question or just want to say hi, I’ll try my best to get back to you! Feel free to reach out about
+                    opportunities or collaborations.</p>
+                <div class="mt-10">
+                    <a href=mailto:uppusanjeev2005@gmail.com class="animated-button shine-effect inline-block bg-transparent border-2 border-sky-400 text-sky-400
+                         hover:bg-sky-400/10 font-bold py-3 px-8 rounded-lg transition-colors duration-300">
+                        Say Hello
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="relative z-10 py-6 border-t border-gray-800 mt-20">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>Designed & Built by SANJEEV UPPU</p>
+            <p class="text-sm mt-2">© 2025 SANJEEV UPPU. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('Particles.js config loaded');
+        });
+    </script>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
